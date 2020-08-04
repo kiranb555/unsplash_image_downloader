@@ -1,0 +1,19 @@
+@import "../sass/theme";
+
+.header {
+  height: 60px;
+  position: sticky;
+  color: $text-light;
+  background-color: $header-color;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_content {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0 30px;
+  }
+}
