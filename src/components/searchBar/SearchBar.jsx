@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "./SearchBar.style.scss";
 
 const SearchBar = ({ handler, onEnterHandler, value }) => {
@@ -9,8 +11,11 @@ const SearchBar = ({ handler, onEnterHandler, value }) => {
         value={value}
         onKeyPress={(e) => onEnterHandler(e)}
         onChange={(e) => handler(e)}
-        placeholder="search for more images here..."
+        placeholder="type & enter to search images"
       />
+      <span>
+        <FontAwesomeIcon icon={faSearch} />
+      </span>
     </div>
   );
 };

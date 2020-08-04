@@ -1,4 +1,10 @@
+@import "./components//sass//theme";
+
 a {
   color: unset;
   text-decoration: none;
+}
+
+body {
+  background-color: $bg;
 }

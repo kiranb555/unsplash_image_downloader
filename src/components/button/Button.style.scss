@@ -1,0 +1,25 @@
+@import "../sass//theme";
+
+.button {
+  width: 150px;
+  border-radius: 30px;
+  padding: 15px 16px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  color: $text-light;
+  transition: all 0.3s;
+  background-color: $primary_color;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  @media (max-width: 768px) {
+    & {
+      font-size: 12px;
+      width: 100px;
+      padding: 8px 16px;
+    }
+  }
+}

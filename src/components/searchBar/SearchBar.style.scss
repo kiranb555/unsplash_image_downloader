@@ -1,0 +1,32 @@
+@import "../sass/theme";
+
+.search_bar {
+  margin-bottom: 30px;
+  position: relative;
+
+  input {
+    width: 50%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+
+    @media (max-width: 768px) {
+      & {
+        width: 100%;
+      }
+    }
+  }
+
+  span {
+    position: absolute;
+    top: 12px;
+    left: 46%;
+    color: $primary-color;
+    @media (max-width: 768px) {
+      & {
+        left: 90%;
+      }
+    }
+  }
+}

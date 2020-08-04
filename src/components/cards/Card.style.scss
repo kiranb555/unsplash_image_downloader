@@ -1,3 +1,5 @@
+@import "../sass/theme";
+
 .card {
   height: 250px;
   width: 100%;
@@ -6,4 +8,31 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &_content {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+
+    &_img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 10px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &_txt {
+      font-weight: 400;
+      color: $text-light;
+      b {
+        color: $primary_color;
+      }
+    }
+  }
 }

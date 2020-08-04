@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/header";
 import Home from "./components/pages/home";
 import ImageView from "./components/pages/imageView";
@@ -10,7 +10,6 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path={`/view:id`} component={ImageView} />

@@ -1,0 +1,52 @@
+@import "../../sass/theme";
+
+.modal {
+  padding: 30px;
+  display: flex;
+  flex-direction: ro;
+  justify-content: center;
+  align-items: center;
+
+  &_close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  &_people {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+
+    &_img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      border: 0.7px solid #cccccc;
+      border-radius: 50%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &_name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  &_image {
+    height: 75%;
+    width: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &_button_holder {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
